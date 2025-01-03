@@ -13,6 +13,8 @@ def on_press(key):
     #for formatting, if enter is pressed, will start a new line
     if key == Key.enter:
         keystrokes.append("\n")
+    elif key == Key.space: #adding a space if the space bar is clicked
+        keystrokes.append(" ")
     else:
         keystrokes.append(key)
 
